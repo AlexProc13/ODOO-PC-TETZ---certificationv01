@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+      <record id="certification1" model="status">
+        <field name="status">Archive</field>
+
+      </record>
+
+      <record id="certification2" model="status">
+        <field name="status">Active</field>
+
+      </record>
+
+
+
+    </data>
+</openerp>

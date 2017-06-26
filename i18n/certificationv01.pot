@@ -1,0 +1,231 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* certificationv01
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0-20150423\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-11-09 08:36+0000\n"
+"PO-Revision-Date: 2015-11-09 08:36+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: certificationv01
+#: model:ir.actions.act_window,help:certificationv01.act_regedit
+msgid "<p class=\"oe_view_nocontent_create\">\n"
+"            Click to create a new register certification.\n"
+"          </p>\n"
+"        \n"
+"            "
+msgstr ""
+
+#. module: certificationv01
+#: view:registr:certificationv01.view_form
+msgid "Additionally"
+msgstr ""
+
+#. module: certificationv01
+#: model:res.groups,name:certificationv01.group_admin_certf
+msgid "Administrator"
+msgstr ""
+
+#. module: certificationv01
+#: model:ir.module.category,name:certificationv01.module_category_certificationv01
+#: model:ir.ui.menu,name:certificationv01.menu_certification
+#: model:ir.ui.menu,name:certificationv01.register_menu_cat
+msgid "Certification"
+msgstr ""
+
+#. module: certificationv01
+#: field:registr,country_id:0
+msgid "Country"
+msgstr ""
+
+#. module: certificationv01
+#: field:registr,create_uid:0
+#: field:status,create_uid:0
+#: field:type_of_certificate,create_uid:0
+msgid "Created by"
+msgstr ""
+
+#. module: certificationv01
+#: field:registr,create_date:0
+#: field:status,create_date:0
+#: field:type_of_certificate,create_date:0
+msgid "Created on"
+msgstr ""
+
+#. module: certificationv01
+#: view:res.partner:certificationv01.view_search_part
+msgid "Customer Partners"
+msgstr ""
+
+#. module: certificationv01
+#: view:registr:certificationv01.view_form
+msgid "Dates"
+msgstr ""
+
+#. module: certificationv01
+#: field:registr,description:0
+msgid "Description"
+msgstr ""
+
+#. module: certificationv01
+#: field:registr,end_data:0
+msgid "End data"
+msgstr ""
+
+#. module: certificationv01
+#: field:registr,expire:0
+#: help:registr,expire:0
+msgid "Expire"
+msgstr ""
+
+#. module: certificationv01
+#: field:registr,float:0
+msgid "Float"
+msgstr ""
+
+#. module: certificationv01
+#: view:registr:certificationv01.view_form
+msgid "General"
+msgstr ""
+
+#. module: certificationv01
+#: field:registr,id:0
+#: field:status,id:0
+#: field:type_of_certificate,id:0
+msgid "ID"
+msgstr ""
+
+#. module: certificationv01
+#: field:registr,write_uid:0
+#: field:status,write_uid:0
+#: field:type_of_certificate,write_uid:0
+msgid "Last Updated by"
+msgstr ""
+
+#. module: certificationv01
+#: field:registr,write_date:0
+#: field:status,write_date:0
+#: field:type_of_certificate,write_date:0
+msgid "Last Updated on"
+msgstr ""
+
+#. module: certificationv01
+#: field:registr,number:0
+msgid "Number"
+msgstr ""
+
+#. module: certificationv01
+#: model:ir.ui.menu,name:certificationv01.menu_action_contacts
+#: field:registr,registr_id:0
+#: view:res.partner:certificationv01.view_search_part
+#: field:res.partner,organ:0
+msgid "Organ"
+msgstr ""
+
+#. module: certificationv01
+#: model:ir.actions.act_window,name:certificationv01.new_act
+msgid "Organ certification"
+msgstr ""
+
+#. module: certificationv01
+#: model:ir.model,name:certificationv01.model_res_partner
+msgid "Partner"
+msgstr ""
+
+#. module: certificationv01
+#: field:registr,production_id:0
+msgid "Production"
+msgstr ""
+
+#. module: certificationv01
+#: field:registr,put_in:0
+msgid "Put in"
+msgstr ""
+
+#. module: certificationv01
+#: model:ir.ui.menu,name:certificationv01.menu_act_regedit
+msgid "Register"
+msgstr ""
+
+#. module: certificationv01
+#: model:ir.actions.act_window,name:certificationv01.act_regedit
+msgid "Register certification"
+msgstr ""
+
+#. module: certificationv01
+#: model:ir.ui.menu,name:certificationv01.settings_menu_cat
+msgid "Settings"
+msgstr ""
+
+#. module: certificationv01
+#: field:registr,start_data:0
+msgid "Start data"
+msgstr ""
+
+#. module: certificationv01
+#: field:registr,status_id:0
+#: field:status,status:0
+msgid "Status"
+msgstr ""
+
+#. module: certificationv01
+#: model:ir.actions.act_window,name:certificationv01.act_status
+#: model:ir.ui.menu,name:certificationv01.menu_action_status
+#: view:status:certificationv01.view_form_status
+#: view:status:certificationv01.view_tree_status
+msgid "Status certificate"
+msgstr ""
+
+#. module: certificationv01
+#: view:res.partner:certificationv01.view_search_part
+msgid "Suppliers"
+msgstr ""
+
+#. module: certificationv01
+#: view:type_of_certificate:certificationv01.view_form_type
+msgid "To create the certificate type"
+msgstr ""
+
+#. module: certificationv01
+#: model:ir.actions.act_window,name:certificationv01.act_type
+#: model:ir.ui.menu,name:certificationv01.menu_action_type
+#: field:registr,type_certification_id:0
+#: view:type_of_certificate:certificationv01.view_form_type
+#: view:type_of_certificate:certificationv01.view_tree_type
+#: field:type_of_certificate,type_of_certificate:0
+msgid "Type of certificate"
+msgstr ""
+
+#. module: certificationv01
+#: model:res.groups,name:certificationv01.group_user_certf
+msgid "User"
+msgstr ""
+
+#. module: certificationv01
+#: view:registr:certificationv01.view_search
+msgid "search_view"
+msgstr ""
+
+#. module: certificationv01
+#: view:registr:certificationv01.view_calendar
+msgid "view_calendar"
+msgstr ""
+
+#. module: certificationv01
+#: view:registr:certificationv01.view_form
+msgid "view_form"
+msgstr ""
+
+#. module: certificationv01
+#: view:registr:certificationv01.view_tree
+msgid "view_tree"
+msgstr ""
+

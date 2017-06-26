@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+        
+        <record model="ir.actions.act_window" id="certificationv01.act_regedit">
+            <field name="name">Register certification</field>
+            <field name="res_model">registr</field>
+            <field name="view_mode">tree,form,calendar,gantt</field>
+            <field name="view_type">form</field>
+            
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+            Click to create a new register certification.
+          </p>
+        
+            </field>
+        </record>
+		
+        <record model="ir.actions.act_window" id="certificationv01.new_act">
+            <field name="name">Organ certification</field>
+            <field name="res_model">res.partner</field>
+            <field name="context">{'search_default_organ':1,'default_customer': 0,'default_organ': 1}</field>
+            <field name="view_mode">kanban,tree,form</field>
+            <field name="view_type">form</field>
+            <field name="target">current</field>
+            
+        </record>
+		
+		     <record model="ir.actions.act_window" id="certificationv01.act_status">
+            <field name="name">Status certificate</field>
+            <field name="res_model">status</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_type">form</field>
+            <field name="target">current</field>
+            
+        </record>
+			 <record model="ir.actions.act_window" id="certificationv01.act_type">
+            <field name="name">Type of certificate</field>
+            <field name="res_model">type_of_certificate</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_type">form</field>
+            <field name="target">current</field>
+            
+        </record>
+    
+    </data>
+</openerp>

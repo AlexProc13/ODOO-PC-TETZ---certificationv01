@@ -1,0 +1,233 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+        
+    
+            
+    <record model="ir.ui.view" id="certificationv01.view_form">
+        <field name="name">view_form</field>
+        <field name="model">registr</field>
+        
+        
+        <field name="arch" type="xml">
+                
+            <form string="view_form" >
+            
+                <sheet>
+                
+                <group>
+				
+				    <separator string="General" colspan="4"/>
+            
+                    <field name="number"  />
+                    <field name="registr_id" context="{'search_default_organ':1, 'default_organ':1, 'default_customer':0}" domain="[('organ','=',True)]"/>
+                    <field name="type_certification_id"  />
+					
+				
+					<separator string="Dates" colspan="4"/>
+                    <field name="start_data"  />
+					<field name="expire"/>
+                    <field name="end_data" attrs="{'invisible':[('expire', '=', False)]}"/>
+					
+					<separator string="Additionally" colspan="4"/>
+					<field name="production_id"  />
+					<field name="status_id"  />
+					<field name="country_id"  />
+                    
+                    
+                    <field name="description"  />
+                    <field name="put_in"  />
+                </group>
+            
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    
+            
+    <record model="ir.ui.view" id="certificationv01.view_tree">
+        <field name="name">view_tree</field>
+        <field name="model">registr</field>
+        
+        
+        <field name="arch" type="xml">
+                
+            <tree string="view_tree">
+                <field name="number" />
+                <field name="registr_id" />
+				<field name="type_certification_id" />
+				<field name="production_id"  />
+				<field name="status_id"  />
+            </tree>
+                
+        </field>
+    </record>
+
+    
+            
+    <record model="ir.ui.view" id="certificationv01.view_calendar">
+        <field name="name">view_calendar</field>
+        <field name="model">registr</field>
+        
+        
+        <field name="arch" type="xml">
+                
+            <calendar string="view_calendar" date_start="start_data"  color="registr_id"  color_is_attendee="true"  event_open_popup="number" >
+               <field name="number"/>
+			   <field name="registr_id"/>
+			   <field name="type_certification_id"/>
+			
+            </calendar>
+        </field>
+    </record>
+
+    
+            
+    <record model="ir.ui.view" id="certificationv01.view_grant">
+        <field name="name">view_grant</field>
+        <field name="model">registr</field>
+        
+        
+        <field name="arch" type="xml">
+                
+            <gantt date_start="start_data" date_stop="end_data" color="registr_id" >
+            
+            </gantt>
+        </field>
+    </record>
+
+       <record model="ir.ui.view" id="certificationv01.view_search">
+        <field name="name">search_view</field>
+        <field name="model">registr</field>
+        
+        
+        <field name="arch" type="xml">
+                
+            <search string="search_view">
+            
+                <field name="number" />
+                <field name="registr_id" />
+				<field name="type_certification_id" />
+				<field name="production_id"  />
+				<field name="status_id"  />
+				
+            
+            </search>
+        </field>
+    </record> 
+
+	  <record model="ir.ui.view" id="my_partner_partner">
+   <field name="name">my.partner.view</field>
+   <field name="model">res.partner</field>
+   <field name="inherit_id" ref="base.view_partner_form"/>
+   <field name="arch" type="xml">
+     <!-- Insert my field here -->
+      <field name="active" position="before">
+                <field name="organ"/>
+      </field>
+  </field>
+ </record>
+ 
+     <record model="ir.ui.view" id="certificationv01.view_search_part">
+        <field name="name">view_search_partner</field>
+        <field name="model">res.partner</field>
+     <field name="inherit_id" ref="base.view_res_partner_filter"/>
+   <field name="arch" type="xml">      
+        
+<filter string="Suppliers" position="after">
+                        <separator/>
+                      <filter  string="Organ" name="organ" domain="[('organ','=',1)]" help="Customer Partners"/> 
+                    </filter>
+                
+
+        </field>
+    </record>
+	
+	
+	
+	
+	
+	   <record model="ir.ui.view" id="certificationv01.view_form_status">
+        <field name="name">view_form_status</field>
+        <field name="model">status</field>
+        
+        
+        <field name="arch" type="xml">
+                
+            <form string="Status certificate" >
+            
+                <sheet>
+                
+                <group>
+				
+				    <separator string="Status certificate" colspan="4"/>
+            
+                    <field name="status"  />
+
+                </group>
+            
+                </sheet>
+            </form>
+        </field>
+    </record>
+	
+    <record model="ir.ui.view" id="certificationv01.view_tree_status">
+        <field name="name">view_tree_status</field>
+        <field name="model">status</field>
+        
+        
+        <field name="arch" type="xml">
+                
+            <tree string="Status certificate">
+                <field name="status" />
+
+            </tree>
+                
+        </field>
+    </record>
+    
+	
+		   <record model="ir.ui.view" id="certificationv01.view_form_type">
+        <field name="name">view_form_type</field>
+        <field name="model">type_of_certificate</field>
+        
+        
+        <field name="arch" type="xml">
+                
+            <form string="Type of certificate" >
+            
+                <sheet>
+                
+                <group>
+				
+				    <separator string="To create the certificate type" colspan="4"/>
+            
+                    <field name="type_of_certificate"  />
+
+                </group>
+            
+                </sheet>
+            </form>
+        </field>
+    </record>
+            
+    <record model="ir.ui.view" id="certificationv01.view_tree_type">
+        <field name="name">view_tree_type</field>
+        <field name="model">type_of_certificate</field>
+        
+        
+        <field name="arch" type="xml">
+                
+            <tree string="Type of certificate">
+                <field name="type_of_certificate" />
+
+            </tree>
+                
+        </field>
+    </record>
+	
+
+	
+    </data>
+</openerp>

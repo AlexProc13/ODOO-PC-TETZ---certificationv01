@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<openerp>
+   <data noupdate="1">
+    
+        
+    <record model="ir.module.category" id="module_category_certificationv01">
+        <field name="name">Certification</field>
+        <field name="sequence">20</field>
+    </record>
+
+    <record id="certificationv01.group_user_certf" model="res.groups">
+        <field name="name">User</field>
+        <field name="category_id" ref="module_category_certificationv01"/>
+        
+        
+        <!-- <field name="users" eval="[(4, ref('base.user_root'))]"/> -->
+    </record>
+
+	
+	
+	
+        
+    <record id="certificationv01.group_admin_certf" model="res.groups">
+        <field name="name">Administrator</field>
+            <field name="implied_ids" eval="[(4, ref('certificationv01.group_user_certf'))]"/>
+            <field name="category_id" ref="module_category_certificationv01"/>
+            <field name="users" eval="[(4, ref('base.user_root'))]"/>
+        
+        
+        <!-- <field name="users" eval="[(4, ref('base.user_root'))]"/> -->
+    </record>
+
+
+        
+
+
+        
+    </data>
+
+
+</openerp>

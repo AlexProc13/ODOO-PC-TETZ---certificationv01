@@ -1,0 +1,235 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* certificationv01
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0-20150423\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-11-09 08:37+0000\n"
+"PO-Revision-Date: 2015-11-09 08:37+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: certificationv01
+#: model:ir.actions.act_window,help:certificationv01.act_regedit
+msgid "<p class=\"oe_view_nocontent_create\">\n"
+"            Click to create a new register certification.\n"
+"          </p>\n"
+"        \n"
+"            "
+msgstr "<p class=\"oe_view_nocontent_create\">\n"
+"            Нажмите, чтобы создать новый регистр сертификации.\n"
+"          </p>\n"
+"        \n"
+"            "
+
+#. module: certificationv01
+#: view:registr:certificationv01.view_form
+msgid "Additionally"
+msgstr "Дополнительно"
+
+#. module: certificationv01
+#: model:res.groups,name:certificationv01.group_admin_certf
+msgid "Administrator"
+msgstr "Администратор"
+
+#. module: certificationv01
+#: model:ir.module.category,name:certificationv01.module_category_certificationv01
+#: model:ir.ui.menu,name:certificationv01.menu_certification
+#: model:ir.ui.menu,name:certificationv01.register_menu_cat
+msgid "Certification"
+msgstr "Сертификация"
+
+#. module: certificationv01
+#: field:registr,country_id:0
+msgid "Country"
+msgstr "Страна"
+
+#. module: certificationv01
+#: field:registr,create_uid:0
+#: field:status,create_uid:0
+#: field:type_of_certificate,create_uid:0
+msgid "Created by"
+msgstr "Created by"
+
+#. module: certificationv01
+#: field:registr,create_date:0
+#: field:status,create_date:0
+#: field:type_of_certificate,create_date:0
+msgid "Created on"
+msgstr "Created on"
+
+#. module: certificationv01
+#: view:res.partner:certificationv01.view_search_part
+msgid "Customer Partners"
+msgstr "Партнеры-заказчики"
+
+#. module: certificationv01
+#: view:registr:certificationv01.view_form
+msgid "Dates"
+msgstr "Дата"
+
+#. module: certificationv01
+#: field:registr,description:0
+msgid "Description"
+msgstr "Описание"
+
+#. module: certificationv01
+#: field:registr,end_data:0
+msgid "End data"
+msgstr "Конец"
+
+#. module: certificationv01
+#: field:registr,expire:0
+#: help:registr,expire:0
+msgid "Expire"
+msgstr "  "
+
+#. module: certificationv01
+#: field:registr,float:0
+msgid "Float"
+msgstr "Float"
+
+#. module: certificationv01
+#: view:registr:certificationv01.view_form
+msgid "General"
+msgstr "Основные"
+
+#. module: certificationv01
+#: field:registr,id:0
+#: field:status,id:0
+#: field:type_of_certificate,id:0
+msgid "ID"
+msgstr "ID"
+
+#. module: certificationv01
+#: field:registr,write_uid:0
+#: field:status,write_uid:0
+#: field:type_of_certificate,write_uid:0
+msgid "Last Updated by"
+msgstr "Обновлено от"
+
+#. module: certificationv01
+#: field:registr,write_date:0
+#: field:status,write_date:0
+#: field:type_of_certificate,write_date:0
+msgid "Last Updated on"
+msgstr "Обновлено"
+
+#. module: certificationv01
+#: field:registr,number:0
+msgid "Number"
+msgstr "Номер"
+
+#. module: certificationv01
+#: model:ir.ui.menu,name:certificationv01.menu_action_contacts
+#: field:registr,registr_id:0
+#: view:res.partner:certificationv01.view_search_part
+#: field:res.partner,organ:0
+msgid "Organ"
+msgstr "Орган по сертификации"
+
+#. module: certificationv01
+#: model:ir.actions.act_window,name:certificationv01.new_act
+msgid "Organ certification"
+msgstr "Орган по сертификации"
+
+#. module: certificationv01
+#: model:ir.model,name:certificationv01.model_res_partner
+msgid "Partner"
+msgstr "Партнер"
+
+#. module: certificationv01
+#: field:registr,production_id:0
+msgid "Production"
+msgstr "Продукция"
+
+#. module: certificationv01
+#: field:registr,put_in:0
+msgid "Put in"
+msgstr "Вложение"
+
+#. module: certificationv01
+#: model:ir.ui.menu,name:certificationv01.menu_act_regedit
+msgid "Register"
+msgstr "Реестр"
+
+#. module: certificationv01
+#: model:ir.actions.act_window,name:certificationv01.act_regedit
+msgid "Register certification"
+msgstr "Реестр сертификата"
+
+#. module: certificationv01
+#: model:ir.ui.menu,name:certificationv01.settings_menu_cat
+msgid "Settings"
+msgstr "Настройки"
+
+#. module: certificationv01
+#: field:registr,start_data:0
+msgid "Start data"
+msgstr "Начало"
+
+#. module: certificationv01
+#: field:registr,status_id:0
+#: field:status,status:0
+msgid "Status"
+msgstr "Состояние"
+
+#. module: certificationv01
+#: model:ir.actions.act_window,name:certificationv01.act_status
+#: model:ir.ui.menu,name:certificationv01.menu_action_status
+#: view:status:certificationv01.view_form_status
+#: view:status:certificationv01.view_tree_status
+msgid "Status certificate"
+msgstr "Состояние сертификата"
+
+#. module: certificationv01
+#: view:res.partner:certificationv01.view_search_part
+msgid "Suppliers"
+msgstr "Поставщики"
+
+#. module: certificationv01
+#: view:type_of_certificate:certificationv01.view_form_type
+msgid "To create the certificate type"
+msgstr "Создать тип сертификата"
+
+#. module: certificationv01
+#: model:ir.actions.act_window,name:certificationv01.act_type
+#: model:ir.ui.menu,name:certificationv01.menu_action_type
+#: field:registr,type_certification_id:0
+#: view:type_of_certificate:certificationv01.view_form_type
+#: view:type_of_certificate:certificationv01.view_tree_type
+#: field:type_of_certificate,type_of_certificate:0
+msgid "Type of certificate"
+msgstr "Тип сертификата"
+
+#. module: certificationv01
+#: model:res.groups,name:certificationv01.group_user_certf
+msgid "User"
+msgstr "Пользователь"
+
+#. module: certificationv01
+#: view:registr:certificationv01.view_search
+msgid "search_view"
+msgstr "Поиск"
+
+#. module: certificationv01
+#: view:registr:certificationv01.view_calendar
+msgid "view_calendar"
+msgstr "Вид календарь"
+
+#. module: certificationv01
+#: view:registr:certificationv01.view_form
+msgid "view_form"
+msgstr "Вид форма"
+
+#. module: certificationv01
+#: view:registr:certificationv01.view_tree
+msgid "view_tree"
+msgstr "Вид дерева"
+

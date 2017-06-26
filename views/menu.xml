@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+        
+        <menuitem id="certificationv01.menu_certification" name="Certification"  sequence="50"
+		groups="certificationv01.group_admin_certf,certificationv01.group_user_certf"/>
+
+    
+        <menuitem id="certificationv01.register_menu_cat" name="Certification"  sequence="50"
+                parent="certificationv01.menu_certification"
+				groups="certificationv01.group_admin_certf,certificationv01.group_user_certf"/>
+
+    
+        <menuitem id="certificationv01.menu_act_regedit" name="Register"  sequence="50"
+                parent="certificationv01.register_menu_cat"
+                action="certificationv01.act_regedit"
+				groups="certificationv01.group_admin_certf,certificationv01.group_user_certf"/>
+				
+		<menuitem id="certificationv01.menu_action_contacts" name="Organ"  sequence="50"
+                parent="certificationv01.register_menu_cat"
+                action="certificationv01.new_act"
+				groups="certificationv01.group_admin_certf,certificationv01.group_user_certf"/>
+				
+				
+				
+				
+				        <menuitem id="certificationv01.settings_menu_cat" name="Settings"  sequence="50"
+                parent="certificationv01.register_menu_cat"
+				groups="certificationv01.group_admin_certf,certificationv01.group_user_certf" />
+				
+				
+				
+						<menuitem id="certificationv01.menu_action_status" name="Status certificate"  sequence="50"
+                parent="certificationv01.settings_menu_cat"
+                action="certificationv01.act_status"
+				groups="certificationv01.group_admin_certf,certificationv01.group_user_certf"/>
+				
+				      <menuitem id="certificationv01.menu_action_type" name="Type of certificate"  sequence="50"
+                parent="certificationv01.settings_menu_cat"
+                action="certificationv01.act_type"
+				groups="certificationv01.group_admin_certf,certificationv01.group_user_certf"/>
+
+    
+    </data>
+</openerp>
